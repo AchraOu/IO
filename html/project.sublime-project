@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	
+	"build_systems": [
+		{
+			"name": "compile.node.js",
+			"shell_cmd": "node compile.node.js",
+			"working_dir": "${project_path}"
+		}
+	]
+}

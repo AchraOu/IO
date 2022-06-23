@@ -1,0 +1,28 @@
+{ // Use deploy.sh to deploy!
+	"project": "cursors",
+	"endpoint": "cursors",
+	
+	"httpHealthCheck": [ 80, 2828 ],
+	
+	"serverSize": 1,
+	"shutdownTimeout": 60,
+	
+	"cloudFlareZone": "5b58d46a1e88cfc22b4bf785c550145b",
+	
+	"updateKeepAliveMin": 5,
+	"updateKeepAliveMax": 10,
+	
+	"endpointBehaviorOnUpdate": "clear",
+	
+	"run": "chmod +x m28n.sh && ./m28n.sh",
+	"package": [
+		"html/production",
+		"server",
+		"m28n.sh",
+		"SConstruct"
+	],
+	
+	"regions": [
+		"digitalocean-sfo"
+	]
+}
